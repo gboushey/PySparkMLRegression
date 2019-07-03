@@ -2,7 +2,7 @@
 
 This repository contains example code for creating ML models using PySpark.
 
-These examples were initially created to demonstrate how to find the threshold at which diastolic and systolic blood pressure result in a diagnosis of hypertension. However, I felt it would be more useful to provide examples based on a publicly available dataset, so I replaced diastolic and systolic values mapping to hypertension to examples using per capita gdp and life expectancy. 
+These examples were initially created to demonstrate how to find the threshold at which diastolic and systolic blood pressure result in a diagnosis of hypertension. However, I felt it would be more useful to provide examples based on a publicly available dataset, so I replaced diastolic and systolic values mapping to hypertension with examples using per capita gdp and life expectancy. 
 
 The dataset used here, gapminder_all_binary.csv, is based on a dataset used for the software carpentry lesson "Plotting and Programming in Python" (https://swcarpentry.github.io/python-novice-gapminder/). I made one alteration - I added a binary field, "Over 65", indicating whether the life expectency for a particular country in 2007 was over or under 65 (1 for yes, 0 for no). I use this field for examples where I train a random forest (among other tree-based regressions) to determine the threshold for when this field should map to 1 or 0 (because this is a contrived example where I specifically coded these values to a threshold of 65, we know in advance that the ML model should return not too far off that predetermined threshold). 
 
